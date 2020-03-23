@@ -1,0 +1,275 @@
+#h1_stix {text-align: center}
+
+#body_stix {
+    background-color:#373738;
+    font-family:'Century Gothic' , Geneva, Arial, Helvetica, sans-serif;
+}
+
+.block {
+    background: #f0f0f0; /* Цвет фона */
+    width: 300px; /* Ширина блока */
+    padding: 10px; /* Поля */
+    border: 2px solid #000; /* Параметры рамки */
+    margin: auto
+}
+.blosk-1{
+    width: 60%;
+    margin: auto;
+    margin-top: 20px;   
+    margin-bottom: 20px;
+    padding-right: 10px;
+}
+
+.p-myself{
+    color:white;
+}
+
+a{
+    color: whitesmoke;
+    text-decoration:none;
+}
+.a-autor{
+    color:#373738;
+}
+h1{
+    text-align: center;
+}
+
+h3{
+    text-align: center;
+}
+
+p{
+    text-align: center;
+}
+
+ul{
+    list-style-type: square;
+    list-style-position: outside;
+}
+
+.h3-color{
+    color: #373738;
+}
+
+.h1-color{
+    color:white;
+}
+
+hr {
+    border: none; /* Убираем границу для браузера Firefox */
+    color: white; /* Цвет линии для остальных браузеров */
+    background-color: white; /* Цвет линии для браузера Firefox и Opera */
+    height: 2px; /* Толщина линии */
+   }
+
+#p_tochki{
+    text-align: center;
+}
+
+#p_autor{
+    text-align: right;
+}
+
+.blockmyself{
+    width: 90%; /* Ширина блока */
+    margin: auto;
+    color: white;
+}
+
+.leftimg{
+    float: left;
+    width : 250px; 
+    height : 160px; /* Выравнивание по левому краю */
+    margin: 7px 7px 7px 0; /* Отступы вокруг картинки */
+    border: 1px solid #000; /* Параметры рамки */
+}
+
+.wid{
+    width: 220px;
+    margin: auto;
+    text-align: right;
+}
+.foo{
+    width: 100%;
+    text-align: right;
+}
+/*======================================================*/
+nav {
+    width: 40%;
+    margin: auto;
+    text-align: center;
+    margin-bottom: 20px;
+    background-color: #373738;
+}
+
+nav ul {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    position: relative;
+    display: flex;
+    }
+
+nav ul li {
+    display:inline-block;
+    }
+
+nav a:hover{
+    color:white;
+}
+
+nav ul ul {
+    display: none;
+    position: absolute;
+}
+
+nav ul li:hover > ul {
+    display: inherit;
+}
+
+nav ul ul li {
+    padding: 10px 10px 10px 0px;
+    min-width: 100px;
+    display:list-item;
+    position: relative;
+    background-color: #373738;
+}
+
+nav ul ul ul {
+    position: absolute;
+    top:0;
+    left:100%;
+}
+
+div li{
+    margin: auto;
+}
+
+@media (min-width: 700px){ 
+    .main_column{
+        display: flex;
+        width: 90%;
+        margin: auto;
+    }
+}
+
+
+.left-column{
+    flex:1;
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    background-color:white;
+    padding: 10px 10px 10px 10px;
+}
+
+.right-column{
+    flex:1;
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    background-color: white;
+    padding: 10px 10px 10px 10px;
+}
+
+.center-column{
+    flex:1;
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    background-color: white;
+    padding: 10px 10px 10px 10px;
+}
+
+div.left-column ul{
+    list-style: none;
+    padding: 10px 10px 10px 10px;
+}
+
+div.right-column ul{
+    list-style: none;
+    padding: 10px 10px 10px 10px;
+}
+
+div li{
+    margin: auto;
+}
+
+.format{
+    width: 150px;
+    height: 150px;
+}
+
+.format_1{
+    width: 370px;
+    height: 210px;
+    padding: 10px 10px 10px 10px;
+}
+
+.format-1{
+    width: 150px;
+    height: 150px;
+    padding-top: 15px;
+}
+
+.gif_{
+    width: 250px;
+    height: 250px;
+}
+
+.video{
+    border: 0;
+    padding-top: 60px;
+}
+
+footer{
+    width: 90%;
+    margin: auto;
+    margin-top: 10px;
+}
+
+.autor{
+    color: white;
+    text-align: right;
+}
+
+.scroll{
+    margin-top: 30px;
+    margin-bottom: 30px;
+    height: 500px;
+    overflow-y: scroll;
+    padding: 10px;
+}
+/*print==============================================*/
+@media print{
+    .body_stix{
+        font-size: 28px;
+        font-family:'Times New Roman', Times, serif;
+        background-color: white;
+    }
+
+    .scroll{
+        margin: 0;
+        overflow: hidden;
+        width: 100%;
+        height: 100%;
+
+    }
+    
+    .h1-color, .h3-color, p, h3, h1, .a-autor, a, .p-myself{
+        color: black !important;
+    }
+
+    div.scroll div div{
+        text-align: justify;
+    }
+
+    div.left-column, div.right-column, hr, nav, footer, .h1-color, img{
+        display: none;
+    }   
+
+}
