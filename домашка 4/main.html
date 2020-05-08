@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <meta charset="utf-8">
+        <title>Task JS</title>
+        <script src="func.js"></script>
+        <link rel="stylesheet" href="style.css" type="text/css">
+    </head>
+    <body>
+        <div class="form">
+            <h3>Площадь трапеции.</h3>
+               <img src="trap.png" width="15%" style="margin-bottom: 10px;"><br>
+            <div class="form">
+                <p>
+                <span>
+                    Нижнее основание <strong>(b)</strong>: 
+                </span>
+                <input type="number" id="b">
+                </p>
+                <p>
+                <span>
+                    Верхнее основание <strong>(a)</strong>: 
+                </span>
+                <input type="number" id="a">
+                </p>
+                <p>
+                <span>
+                    Высота <strong>(h)</strong>: 
+                </span>
+                <input type="number" id="h">
+                </p>
+            </div>
+            <div class="form">
+                <span>Знаков после запятой:  </span>
+                <input type="number" min="1" max="10" id="round" value="3">
+            </div>
+            <button type="button" onclick="button1()" id="button1">Вычислить</button>
+            <div class="form">
+                Площадь:  <span id="res"> </span>
+            </div>
+        </div>
+        
+        <div class="form">
+            <h3>Найти сумму (1х100)+(3x98)+(5х96)+...+(51x50).</h3>
+            <div style="margin-top: 10px; margin-bottom: 10px;">
+                Сумма:  <span id="resul"></span>    
+            <p><button type="button" onclick="button2()" id="button1">Вычислить</button></p>
+            </div>
+        </div>
+        
+        <div class="form">
+            <h3>Матрица М состоит из 5 строк, 7 столбцов. Расположить элементы в каждом столбце в порядке возрастания.</h3>
+            <div class="form">
+                <input class="element" type="number" value="38" >
+                <input class="element" type="number" value="31" >
+                <input class="element" type="number" value="-62" >
+                <input class="element" type="number" value="1" >
+                <input class="element" type="number" value="44" >
+                <input class="element" type="number" value="13" >
+                <input class="element" type="number" value="96" >
+            </div>
+            <div class="form">
+                <input class="element" type="number" value="5">
+                <input class="element" type="number" value="69">
+                <input class="element" type="number" value="38">
+                <input class="element" type="number" value="99">
+                <input class="element" type="number" value="67">
+                <input class="element" type="number" value="-38">
+                <input class="element" type="number" value="15">
+            </div>
+            <div class="form">
+                <input class="element" type="number" value="75">
+                <input class="element" type="number" value="50">
+                <input class="element" type="number" value="59">
+                <input class="element" type="number" value="45">
+                <input class="element" type="number" value="28">
+                <input class="element" type="number" value="35">
+                <input class="element" type="number" value="-86">
+            </div>
+            <div class="form">
+                <input class="element" type="number" value="92">
+                <input class="element" type="number" value="85">
+                <input class="element" type="number" value="19">
+                <input class="element" type="number" value="14">
+                <input class="element" type="number" value="36">
+                <input class="element" type="number" value="57">
+                <input class="element" type="number" value="81">
+            </div>
+            <div class="form">
+                <input class="element" type="number" value="45">
+                <input class="element" type="number" value="9">
+                <input class="element" type="number" value="26">
+                <input class="element" type="number" value="61">
+                <input class="element" type="number" value="87">
+                <input class="element" type="number" value="89">
+                <input class="element" type="number" value="38">
+            </div>
+            <button type="button" onclick="button3()">Вычислить</button>
+            </div>            
+            <div class="form">
+                <h3>Функции</h3>
+                <div class="form">
+                    <span>min: </span>
+                    <input id="min" type="number" value="0">
+                    <span>max: </span>
+                    <input id="max" type="number" value="100">
+                    <span>n: </span>
+                    <input id="n" type="number" value ="3">
+                </div>
+                <span><button id="button4" onclick="getArray()">Сгенерить</button></span>
+                </div>
+                <center><div id="matrix"></div></center>
+        </div>
+    </body>
+
+</html>

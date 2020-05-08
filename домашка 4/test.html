@@ -1,0 +1,49 @@
+<html>
+<body> 
+<script>
+ 
+function sortArray(A) //Функция сортировки элементов массива по возрастанию
+{ 
+    var tmp;
+  
+    for (var i=0; i<A.length-1; i++ )
+    { for (var j=i+1; j<A.length; j++)
+      { if (A[j] < A[i])
+           { tmp=A[j]; A[j]=A[i]; A[i]=tmp; }
+      }
+    }
+ 
+    return A;
+}
+ 
+var n;
+n=prompt('Введите размер двумерного массива N*N', 6);
+var a=new Array(n);
+ 
+document.write("<table border='1' width=20% height=20% align=center bgcolor=silver>>");
+document.write('<caption><h3>Не сортированный массив</h3></caption>');
+for (var j=0; j<n; j++) 
+{ a[j]=[];
+document.write("<tr>");
+  for(var i=0;i<n;i++)
+  {
+  a[j][i]=Math.floor(Math.random()*9)+1;
+  document.write("<td align='center'>" + a[j][i] + "</td>");
+  } 
+  document.write("</tr>");
+}
+document.write("</table>");
+ 
+document.write("<table border='1' width=20% height=20% align=center bgcolor=silver>>");
+document.write('<caption><h3>Cортированный массив</h3></caption>');
+for (var j=0; j<n; j++) 
+    { a[j]=sortArray(a[j]);  //Сортировка элементов строк двумерного массива
+      document.write("<tr>");
+      for (var i=0; i<n; i++)
+          { document.write("<td align='center'>" + a[j][i] + "</td>"); } 
+      document.write("</tr>");
+    } 
+document.write("</table>");
+</script> 
+</body>
+</html>
