@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>
+            php
+        </title>
+    </head>
+    <body>
+        
+        <script>
+        let mass = [
+            {
+                text: "Животные",
+                childs: [
+                    {
+                        text: "Млекопитающие",
+                        childs: [
+                            {
+                                text: "Коровы",    
+                                childs: []
+                            },
+                            {
+                                text: "Ослы",    
+                                childs: []
+                            },
+                            {
+                                text: "Собаки",    
+                                childs: []
+                            },
+                            {
+                                text: "Тигры",    
+                                childs: []    
+                            }
+                        ]        
+                    },
+                    {
+                        text: "Другие",
+                        childs: [
+                            {
+                                text: "Ослы",    
+                                childs: []
+                            },
+                            {
+                                text: "Собаки",    
+                                childs: []
+                            },
+                            {
+                                text: "Тигры",    
+                                childs: []
+                            }    
+                        ]   
+                    }    
+                ]
+            },
+            {
+                text: "Рыбы",
+                childs: [
+                    {
+                        text: "Аквариумные",
+                        childs: [
+                            {
+                                text: "Гуппи",
+                                childs: []
+                            },
+                            {
+                                text: "Скалярии",
+                                childs: []
+                            }
+                        ]
+                    },
+                    {
+                        text: "Морские",
+                        childs: [
+                            {
+                                text: "Морская форель",
+                                childs: []
+                            }
+                        ]
+                    }    
+                ]
+            }
+        ];
+        let list = document.body.appendChild(document.createElement('ul'));
+        function create_list(chld, list){
+            let li = list.appendChild(document.createElement('li'));
+            li.appendChild(document.createTextNode(chld.text));
+            if (chld.childs != []){
+                var ul = li.appendChild(document.createElement('ul'));
+                for (children of chld.childs){
+                    create_list(children, ul);
+                }
+            }
+        }
+        for (chld of mass){
+            create_list(chld, list);
+        }
+        
+        function object_info(dom) {
+            for (i of dom.children) {
+                if (i.children) {
+                    console.dir(i);
+                    object_info(i);
+                }
+            }
+        }
+        var dom = document;
+        object_info(dom);
+        </script>
+    </body>
+</html>
