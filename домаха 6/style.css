@@ -1,0 +1,50 @@
+@import url('https://fonts.googleapis.com/css?family=Lato:400,700');
+body {
+    font-family: 'Lato', sans-serif;
+    background-color: #DCDCDC;
+}
+
+input[type="button"] {
+    margin-top: 10px;
+    color:white;
+    background: #6A5ACD;
+    border: none;
+    outline: none;
+    border-radius: 10px;
+    text-transform: uppercase;
+    height: 30;
+    width: 90;
+}
+
+input[type='button']:not(:active) {
+    transform: scale(0.95);
+}
+
+input[type='button']:hover {
+    cursor: pointer;
+}
+
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webSkit-inner-spin-button {
+    -webkit-appearance: none;
+}
+
+input[type="number"] {
+    background: white;
+    border: 3px solid #6A5ACD;
+    margin-right: 2px;
+    outline: none;
+    border-radius: 10px;
+    height: 30;
+    width: 90;
+
+}
+
+input {
+    margin-top: 10px;
+}
+
+canvas { 
+    border: 5px solid #6A5ACD; 
+    border-radius: 10px;
+}

@@ -1,0 +1,27 @@
+<html>
+
+<head>
+    <title>Canvas & Mootools</title>
+    <script type="text/javascript"
+        src="https://cdnjs.cloudflare.com/ajax/libs/mootools/1.6.0/mootools-core.js"></script>
+    <script src="script.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body onload="init();">
+    <canvas id="canvas" width="1000" height="600" onclick="goInput(event);"></canvas>
+    <form>
+        <input id="num" type="number" value="100" min="40" max="700">
+        <input type="button" value="top" onclick="move(0)">
+        <input type="button" value="down" onclick="move(1)">
+        <input type="button" value="left" onclick="move(2)">
+        <input type="button" value="right" onclick="move(3)">
+        <input type="button" value="chaos" onclick="move(4)">
+        <input type="button" value="random" onclick="move()">
+        <input type="button" value="slower" onclick="slower()">
+        <input type="button" value="faster" onclick="faster()">
+        <input type="button" value="stop" onclick="stop()">
+    </form>
+</body>
+
+</html>
