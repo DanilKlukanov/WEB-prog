@@ -1,0 +1,54 @@
+<html>
+
+<head>
+    <title>Game</title>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mootools/1.6.0/mootools-core.js"></script>
+    <script src="script.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300&family=Permanent+Marker&display=swap" rel="stylesheet">
+</head>
+    <header>
+        <div class ="name">Hotline Miami</div>
+    </header>
+<body onload="new_session();">
+    <div id="wrapper">
+
+        <div id="game" class="main">
+            <canvas id="canvas" width="900" height="506" onclick="shoot();" ondblclick="ult();" onmousemove="rotate(event)">
+            </canvas>
+        </div>
+
+        <div id="info" class="main">
+            <table>
+                <tr>
+                    <td>
+                        <div id="top" align="center">
+                        </div>
+                    </td>
+                    <td>
+                        <div id="rules" align="center">
+                            <span><h2>Rules</h2></span>
+                            <p>Welcome to the game! There are some rules here:<br> 
+                                1) You have 5 lives. If you lose them all, you will end.<br>
+                                2) There are 4 types of enemies in the game. Each has its own speed and the number of points for the destruction.<br>
+                                3) You can apply “over kick” for 500 points. All enemies will be destroyed. Double click on a key.<br> 
+                                4) There are 3 waves, you can reach 3, then you are cool!.<br>
+                            </p>
+                        </div>
+                    </td>
+                </tr>
+            </table>
+        </div>
+
+        <div class="btns">
+            <input type="button" id="btn1" class="btn" value="Play" onclick="change_status();">
+            <input type="button" id="btn2" class="btn" value="Restart" onclick="init();">
+            <input type="button" id="btn3" class="btn" value="Change player" onclick="new_session();">
+            <input type="button" id="btn4" class="btn" value="Rules & Records" onclick="change_section();">
+            <input type="button" id="btn4" class="btn" value="Game" onclick="change_sections();">
+        </div>
+
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,123 @@
+@import url('https://fonts.googleapis.com/css?family=Lato:400,700');
+body {
+    background: rgb(255, 255, 255) url(bg1.jpg);
+    font-family: 'Permanent Marker', cursive;
+}
+#wrapper {
+    position: absolute;
+    right: 0;
+    top: 100px;
+    left: 384px;
+    width: 900px;
+    height: 506px;
+    border-radius: 20px;
+    opacity: 0.95;
+}
+
+.main {
+    position: relative;
+    margin-left: 126px;
+    margin-top: 50px;
+    width: 900px;
+    height: 506px;
+}
+
+#game {
+    display: block;
+}
+
+#info {
+    display: none;
+}
+
+#info td {
+    padding: 0;
+    color: white;
+}
+
+#info table {
+    border-spacing: 0;
+    color: white;
+}
+
+#top {
+    opacity: 0.4;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    width: 450;
+    height: 600;
+    color: white;
+}
+
+#top:hover {
+    opacity: 1;
+}
+
+#rules {
+    opacity: 0.4;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    width: 450;
+    height: 600;
+    font-size: 20px;
+    color: white;
+}
+
+#rules:hover {
+    opacity: 1;
+}
+
+.btns {
+    position: relative;
+    margin-left: 192px;
+    margin-top: 30px;
+    border-radius: 30px;
+    width: 900px;
+    height: 100px;
+    padding: 0;
+}
+
+.btn {
+    width: calc(25% - 3px);
+    padding-left: 0;
+    padding-right: 0;
+}
+
+#gen {
+    width: 50%;
+    font-size: 20px;
+}
+
+#gen td {
+    width: 50%;
+    text-align: center;
+}
+
+input[type="button"] {
+    color:white;
+    background: #8d2028;
+    border: none;
+    outline: none;
+    border-radius: 10px;
+    text-transform: uppercase;
+    height: 50;
+    width: 150;
+    font-family: 'Permanent Marker', cursive;
+    font-size: 12pt;
+}
+
+canvas { 
+    border: 4px solid #FF5D74; 
+    border-radius: 20px;
+}
+.name{
+    text-align: center;
+    color: white;
+    font-family: 'Permanent Marker', cursive;
+    font-size: 30pt;
+}
+img{
+    width: 50px;
+    height: 50px;
+    align-content: center;
+}

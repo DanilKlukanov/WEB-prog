@@ -1,0 +1,62 @@
+<html>
+<head>
+<title>Простая страница</title>
+<script language="JavaScript">
+var eds,x,y;
+function curve_move (xid,zt){
+if(!xid) return null;
+if (!zt) zt=100;
+x=0;
+y=300;
+eds=setInterval("move1('"+xid+"')", 4);
+}
+function move1 (xid){
+x+=1.18;
+y-=0.5;
+document.all[xid].style.top=y;
+document.all[xid].style.left=x;
+if (y==1){
+clearInterval(eds);
+eds=setInterval("move2('"+xid+"')", 4);
+}
+}
+function move2 (xid){
+x+=1.18;
+y+=0.5;
+document.all[xid].style.top=y;
+document.all[xid].style.left=x;
+if (y==300){
+clearInterval(eds);
+eds=setInterval("move3('"+xid+"')", 4);
+}
+}
+function move3 (xid){
+x-=1.18;
+y+=0.5;
+document.all[xid].style.top=y;
+document.all[xid].style.left=x;
+if (y==600){
+clearInterval(eds);
+eds=setInterval("move4('"+xid+"')", 4);
+}
+}
+function move4 (xid){
+x-=1.18;
+y-=0.5;
+document.all[xid].style.top=y;
+document.all[xid].style.left=x;
+if (y==300){
+clearInterval(eds);
+}
+}
+</script>
+</head>
+<body>
+<img name="pic" src="kvad.gif"
+
+style=position:absolute;">
+<script>
+curve_move("pic",8)
+</script>
+</body>
+</html>
